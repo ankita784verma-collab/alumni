@@ -1,0 +1,84 @@
+/* ================================================================= *
+   PCTE Alumni Talks - Global Professional Stylesheet
+   ================================================================= */
+
+:root {
+  --pcte-red: #b30000;
+  --pcte-dark-red: #800000;
+  --pcte-light-bg: #f8f9fa;
+  --pcte-text-dark: #212529;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--pcte-text-dark);
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+
+/* Navbar Branding */
+.navbar-brand {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.navbar-brand .text-danger {
+  color: var(--pcte-red) !important;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(135deg, rgba(179,0,0,0.05) 0%, rgba(255,255,255,1) 100%);
+  padding: 80px 0;
+  border-bottom: 1px solid #dee2e6;
+}
+
+/* Custom Buttons */
+.btn-pcte-red {
+  background-color: var(--pcte-red);
+  color: #fff;
+  border: none;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.btn-pcte-red:hover {
+  background-color: var(--pcte-dark-red);
+  color: #fff;
+}
+
+.btn-outline-pcte-red {
+  color: var(--pcte-red);
+  border-color: var(--pcte-red);
+}
+
+.btn-outline-pcte-red:hover {
+  background-color: var(--pcte-red);
+  color: #fff;
+}
+
+/* Cards & Components */
+.card {
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.06);
+}
+
+/* Footer */
+footer {
+  background-color: #1a1a1a;
+  color: #adb5bd;
+}
+
+footer a {
+  color: #dee2e6;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--pcte-red);
+}
